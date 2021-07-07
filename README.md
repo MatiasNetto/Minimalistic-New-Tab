@@ -20,6 +20,8 @@
 - [Personalizacion](#Personalización)
 - [Instalacion](#Instalacion)
 
+- [Prueva la pagina](https://matiasnetto.github.io/Minimalistic-New-Tab/)
+
 ---
 
 # Como usarlo?
@@ -85,7 +87,7 @@ Lo primero que debes hacer es instalar una extensión llamada “New Tab Redirec
 
 Una vez hecho esto se abrirá una nueva pestaña, en ella deberás buscar en la ultima linea el link que dice “here” y hacer click en el. Una vez hecho esto deberás completar en el campo llamado “Redirect URL” con la URL que se encuentra a continuacion
 
-> pagina.github
+> https://matiasnetto.github.io/Minimalistic-New-Tab/
 
 Una vez hecho, hacer click en el boton de “Save” y listo, al abrir una nueva pestaña mostrara a New-Tab! Como pagina predeterminada y podrás empezar a disfrutar sus características
 
@@ -99,7 +101,7 @@ Lo primero que debes hacer es instalar una extensión llamada “New Tab Overrid
 
 Una vez realizado esto, al abrir una nueva pestaña aparecerá la interfaz de configuración de la extensión, lo único que debes hacer es completar el campo que dice “URL” con la URL que se encuentra a continuación
 
-> pagina.github
+> https://matiasnetto.github.io/Minimalistic-New-Tab/
 
 Una vez hecho esto al abrir una nueva pestaña mostrara a New-Tab! Como pagina predeterminada y podrás empezar a disfrutar sus características
 
