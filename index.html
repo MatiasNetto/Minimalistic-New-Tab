@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Hi developer, You can see all my work in my github!-->
+    <!-- #   https://github.com/MatiasNetto    #-->
+    <!--  -->
+    <!-- You can also download the source code of this website from -->
+    <!-- LINK -->
+
+    <div class="background-container">
+      <img class="background" src="" alt="">
+    </div>
+    <div class="main-container">
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Type to search"
+        id="serchInput"
+      />
+      <ul class="links-container"></ul>
+
+      <div class="widget-container">
+        <h2 class="hora" id="hora">00:00</h2>
+        <p class="date">
+          <span id="date">Lunes</span>, <span id="date">Enero</span>
+          <span id="date">1</span>
+        </p>
+      </div>
+    </div>
+
+    <a class="edit-btn" href="/changePage.html">
+      <img src="assets/Gui/Settings-BTN.png" alt="">
+    </a>
+
+    <script src="js/MainPage/date.js" type="module"></script>
+    <script src="js/MainPage/background.js" type="module"></script>
+    <script src="js/MainPage/links.js" type="module"></script>
+    <script src="js/MainPage/search.js" type="module"></script>
+  </body>
+</html>

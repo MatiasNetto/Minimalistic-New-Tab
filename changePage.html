@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="assets/Gui/Settings-BTN.png">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="css/changePage.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <img class="background" src="" alt="">
+    </div>
+    <div class="main-container">
+      
+      <!-- al entrar te aparece en el medio dos opciones, editar o agregar, ahi elegis, en caso de elegir editar te va a aparecer un texto que dice que elijas un item para editar y una flecha hacia abajo donde esta la lista con los links, una vez elegido se abre el form para editarlos.
+        en caso de elegir agregar uno va a aparecer el mismo form pero con el modo de agregar -->
+        
+        <div id="mode-container" class="mode-container">
+          <button id="edit-btn" class="mode-item">
+            <img src="./assets/Gui/Edit-BTN.png" alt="">
+            <p class="mode-text">EDIT</p>
+          </button>
+          <button id="add-remove-btn" class="mode-item">
+            <img src="./assets/Gui/Add-Remove-BTN.png" alt="">
+            <p class="mode-text">ADD/REMOVE</p>
+          </button>
+          <a class="exit-btn" href="/index.html">
+            <img src="assets/Gui/Back-BTN.png" alt="">
+          </a>
+          <a href="https://github.com/MatiasNetto" class="github-link">
+            <img src="assets/Gui/Github-Logo.png" alt="">
+            <h4>MatiasNetto</h4>
+          </a>
+        </div>
+        
+      <div class="form-container">
+
+        <div id="edit-form-container" style="display:none" class="form-container">
+          <h1 class="form__tittle" id="form-tittle">EDIT</h1>
+          <div class="form__input-container">
+            <label class="form-label" for="">Name</label>
+            <input  class="form-input" type="text" name="name" id="edit-name-input">
+          </div>
+          <div class="form__input-container">
+            <label class="form-label"  for="">Link</label>
+            <input class="form-input" type="text" id="edit-link-input">
+          </div>
+          <div class="form_input-container" id="order-container">
+            <button class="order-btn" id="edit-order-remove-btn"><</button>
+            <span class="order-number" id="edit-order-number">4</span>
+            <button class="order-btn" id="edit-order-add-btn">></button>
+          </div>
+          <button class="form__add-link" id="add-link-button">
+            <img src="/assets/Gui/Add-BTN.png" alt="ADD">
+          </button>
+        </div>
+        
+      </div> 
+      
+    </div>
+    
+    <div class="menu-container" id="menu-container">
+      <button class="exit-save-btn" id="exit-btn">
+        <img class="menu-btn-img" src="./assets/Gui/Exit-BTN.png" alt="">
+      </button>
+      <button class="exit-save-btn"id="save-btn">
+        <img class="menu-btn-img" src="./assets/Gui/Save-BTN.png" alt="">
+      </button>
+    </div>
+
+    <div id="edit-modal" style="display: none;" class="edit-modal">
+          <p>
+            Elige el elemento que deseas editar
+          </p>
+          <p>|</p>
+          <p>V</p>
+    </div>
+
+    <div class="modal" id="modal">
+      <h3 class="modal__tittle" id="modal-tittle">Question</h3>
+      <div class="modal__options-container">
+        <div class="modal__option-container">
+          <button class="modal__option" id="modal-first-option">YES</button>
+        </div>
+        <div class="modal__option-container">
+          <button class="modal__option" id="modal-second-option">NO</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="alert">
+      <h3 class="modal__tittle" id="alert-tittle">Deseas eleminar ASHE de la lista de links?</h3>
+      <div class="modal__options-container">
+        <div class="modal__option-container">
+          <button class="modal__option" id="alert-option">YES</button>
+        </div>
+      </div>
+    </div>
+
+    <ul id="links-container" style="display: none;" class=""></ul>
+
+    
+    <script src="js/MainPage/background.js"></script>
+    <script src="js/ChangePage/links.js" type="module"></script>
+    <script src="js/ChangePage/dataControl.js" type="module"></script>
+    <script src="js/ChangePage/changes.js" type="module"></script>
+    <script src="js/ChangePage/edit.js" type="module"></script>
+    <script src="js/ChangePage/addRemove.js" type="module"></script>
+    <script src="js/ChangePage/menu.js" type="module"></script>
+  </body>
+  </html>
+  

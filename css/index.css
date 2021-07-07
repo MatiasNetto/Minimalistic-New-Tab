@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/*####################*/
+/*#### BACKGROUND ####*/
+/*####################*/
+
+.background-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #2a2a2e;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px) brightness(80%);
+  transform: scale(1.05);
+}
+
+/*################*/
+/*#### SEARCH ####*/
+/*################*/
+
+.search-input {
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5%;
+  margin-left: -25%;
+
+  text-align: center;
+  font-size: 3em;
+  background: transparent;
+  opacity: 0%;
+  border: none;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  outline: none !important;
+
+  transition: all 1.3s ease-out;
+  animation: apear 1s ease-out 1 1s forwards;
+}
+
+.search-input::placeholder {
+  color: #fff8;
+  transition: all 0.5s;
+}
+
+.search-input:focus::placeholder {
+  color: transparent;
+}
+
+.search-input:focus {
+  width: 60%;
+  margin-left: -30%;
+}
+
+/*###############*/
+/*#### LINKS ####*/
+/*###############*/
+
+.links-container {
+  height: 5%;
+  width: 80%;
+  position: absolute;
+  z-index: 99999999;
+  top: 88%;
+  opacity: 0%;
+  left: 0;
+  margin-left: 10%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  animation: apearLinks 1s ease-out 1 1.5s forwards;
+}
+
+.links-container::before {
+  content: '';
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  z-index: 999;
+  backdrop-filter: blur(5px) brightness(90%);
+}
+
+.link-item {
+  position: relative;
+  z-index: 99999;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.link-item a {
+  position: relative;
+  z-index: 99;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*################*/
+/*#### WIDGET ####*/
+/*################*/
+
+.widget-container {
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 30px;
+  opacity: 0%;
+
+  animation: apearWidget 2s ease-out 1 0.3s forwards;
+}
+
+.hora {
+  width: 95%;
+  text-align: right;
+  font-size: 2.5em;
+  margin-right: 0 auto;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+.date {
+  width: 95%;
+  text-align: end;
+  margin-top: 10px;
+  padding-right: 2px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/*##################*/
+/*#### SETTINGS ####*/
+/*##################*/
+
+.edit-btn {
+  height: 3vh;
+  width: 3vh;
+  position: absolute;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  padding: 20px 30px;
+  text-decoration: none;
+  opacity: 0%;
+
+  animation: apearWidget 2s ease-out 1 0.3s forwards;
+}
+
+.edit-btn img {
+  height: 3vh;
+  transform: rotateZ(0deg);
+  transition: transform 1s;
+}
+
+.edit-btn img:hover {
+  transform: rotateZ(-90deg);
+}
+
+/*####################*/
+/*#### ANIMATIONS ####*/
+/*####################*/
+
+@keyframes apear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes apearLinks {
+  0% {
+    opacity: 0%;
+    transform: translateY(8.5vh);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes apearWidget {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
